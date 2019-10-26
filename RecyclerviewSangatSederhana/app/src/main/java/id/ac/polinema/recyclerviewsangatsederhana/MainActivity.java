@@ -28,6 +28,6 @@ public class MainActivity extends AppCompatActivity {
         listSuperHero.add(hero);
         SuperHeroAdapter superHeroAdapter = new SuperHeroAdapter(listSuperHero);
         rvSuperHero.setAdapter(superHeroAdapter);
-        rvSuperHero.setLayoutManager(new LinearLayoutManager(this));
+        rvSuperHero.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
     }
 }
